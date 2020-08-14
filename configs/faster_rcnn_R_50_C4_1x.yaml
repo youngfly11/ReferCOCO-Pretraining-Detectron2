@@ -1,0 +1,29 @@
+MODEL:
+  META_ARCHITECTURE: "GeneralizedRCNN"
+  RPN:
+    PRE_NMS_TOPK_TEST: 6000
+    POST_NMS_TOPK_TEST: 1000
+  ROI_HEADS:
+    NAME: "Res5ROIHeads"
+  WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+  MASK_ON: False
+  RESNETS:
+    DEPTH: 50
+
+
+DATASETS:
+  TRAIN: ("coco_2014_train",)
+  TEST: ("coco_2014_val",)
+
+SOLVER:
+  IMS_PER_BATCH: 8
+  BASE_LR: 0.02
+  STEPS: (60000, 80000)
+  MAX_ITER: 1000
+
+INPUT:
+  MIN_SIZE_TRAIN: (640, 672, 704, 736, 768, 800)
+
+TEST:
+  EVAL_PERIOD: 0
+
