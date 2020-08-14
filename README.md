@@ -13,9 +13,9 @@ detector model based on the **Detectron2**. I hope this will help all researcher
 
 | Backbone     | training set  |  excluded images           | Box-AP/AP50/AP75 | mask-AP/AP50/AP75|Model|Log|
 |  :----:      | :----:        |:----:                     | :---:            |:---:|:---:|:---:|
-| ResNet101-C4 | COCO2017train | refcoco&refcoco+ val&test | 41.01/60.34/44.18|35.33/56.98/37.49|[ckpt_final]()|[log](./outputs/COCO2014/default_training_mscoco_train2017_ignore_refcoco&+_v1/log.txt)|
-| ResNet101-C4 | COCO2017train | refcocog val&test         | 40.99/60.15/44.15|35.33/57.03/37.75|[ckpt_final]()|[log](./outputs/COCO2014/default_training_mscoco_train2017_ignore_refcocog_v1/log.txt)|
-| ResNet101-C4 | COCO2017train | refcoco&+&g val&test      | 42.08/61.60/45.45|36.36/58.35/38.89|[ckpt_final]()|[log](./outputs/COCO2014/default_training_mscoco_train2017_ignore_refcoco&+_vt/log.txt)|
+| ResNet101-C4 | COCO2017train | refcoco&refcoco+ val&test | 41.01/60.34/44.18|35.33/56.98/37.49|[ckpt_final](https://drive.google.com/file/d/1JD5MyfMyE1CGhR0TQl9BKqyAoeuNpPLh/view?usp=sharing)|[log](./outputs/COCO2014/default_training_mscoco_train2017_ignore_refcoco&+_v1/log.txt)|
+| ResNet101-C4 | COCO2017train | refcocog val&test         | 40.99/60.15/44.15|35.33/57.03/37.75|[ckpt_final](https://drive.google.com/file/d/1e-xKFl6eZv5VI1CW6sMFl-OEVh3at0L3/view?usp=sharing)|[log](./outputs/COCO2014/default_training_mscoco_train2017_ignore_refcocog_v1/log.txt)|
+| ResNet101-C4 | COCO2017train | refcoco&+&g val&test      | 42.08/61.60/45.45|36.36/58.35/38.89|[ckpt_final](https://drive.google.com/file/d/1MryfhLe71pt1gpvh5G_XigIecIauabjT/view?usp=sharing)|[log](./outputs/COCO2014/default_training_mscoco_train2017_ignore_refcoco&+_vt/log.txt)|
 
 
 **MSCOCO-refervaltest** denotes MSCOCO2017 training images minus the refcoco, refcoco+, refcocog val&test images
