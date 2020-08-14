@@ -9,6 +9,7 @@ from fvcore.common.timer import Timer
 from detectron2.structures import BoxMode
 from fvcore.common.file_io import PathManager
 import json
+from detectron2.config import global_cfg as cfg
 
 from .. import MetadataCatalog, DatasetCatalog
 
@@ -127,7 +128,7 @@ Category ids in annotations are not in [1, #categories]! We'll apply a mapping f
     DENSEPOSE_KEYS = ["dp_x", "dp_y", "dp_I", "dp_U", "dp_V", "dp_masks"]
 
     num_instances_without_valid_segmentation = 0
-    ignore_imgs = json.load(open('./RefSegDatasets/refseg_anno/all_img_name_refcocog.json', 'r'))
+    ignore_imgs = json.load(open(cfg.DATASETS.IGNORE_IMG_PATH, 'r'))
 
     for (img_dict, anno_dict_list) in imgs_anns:
         record = {}

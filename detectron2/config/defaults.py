@@ -84,6 +84,7 @@ _C.INPUT.MASK_FORMAT = "polygon"  # alternative: "bitmask"
 _C.DATASETS = CN()
 # List of the dataset names for training. Must be registered in DatasetCatalog
 _C.DATASETS.TRAIN = ()
+_C.DATASETS.IGNORE_IMG_PATH=''
 # List of the pre-computed proposal files for training, which must be consistent
 # with datasets listed in DATASETS.TRAIN.
 _C.DATASETS.PROPOSAL_FILES_TRAIN = ()
